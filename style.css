@@ -1,0 +1,187 @@
+html,
+div,
+body,
+canvas {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(-45deg, #8e1712, #471c4e, #132645, #23454b);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    filter: hue-rotate(0deg);
+}
+
+container {
+    background: transparent;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+}
+
+splash {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0vh;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: url(images/splash.jpg);
+    background-size: 100vw 100vh;
+    background-color: black;
+    opacity: 1.0;
+    z-index: 1001;
+    -webkit-app-region: no-drag;
+}
+
+
+crosshairs {
+    position: absolute;
+    top: 45vw;
+    left: 45vh;
+    width: 15vw;
+    height: 15vh;
+    border-radius: 0vh;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: url(images/crosshairs.png);
+    background-size: 15vw 15vh;
+    background-color: transparent;
+    opacity: 1;
+    z-index: 1003;
+    pointer-events: none;
+    -webkit-app-region: no-drag;
+}
+
+button {
+    position: absolute;
+    top: 90vh;
+    left: 15vw;
+    width: 8vh;
+    height: 8vh;
+    border-radius: 0vh;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: url(images/button.png);
+    background-size: 8vh 8vh;
+    opacity: 0.8;
+    z-index: 1000;
+    -webkit-app-region: no-drag;
+}
+
+button:hover {
+    background-size: 8vh 8vh;
+    opacity: 1.0;
+}
+
+button:active {
+    background-size: 8vh 8vh;
+    opacity: 0.2;
+    left: 15vw;
+    top: 90vh;
+}
+
+button1 {
+    position: absolute;
+    top: 90vh;
+    left: 35vw;
+    width: 8vh;
+    height: 8vh;
+    border-radius: 0vh;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: url(images/button.png);
+    background-size: 8vh 8vh;
+    opacity: 0.;
+    z-index: 1000;
+    -webkit-app-region: no-drag;
+}
+
+button1:hover {
+    background-size: 8vh 8vh;
+    opacity: 1.0;
+}
+
+button1:active {
+    background-size: 8vh 8vh;
+    opacity: 0.2;
+}
+
+button2 {
+    position: absolute;
+    top: 90vh;
+    left: 55vw;
+    width: 8vh;
+    height: 8vh;
+    border-radius: 0vh;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: url(images/button.png);
+    background-size: 8vh 8vh;
+    opacity: 0.8;
+    z-index: 1000;
+    -webkit-app-region: no-drag;
+}
+
+button2:hover {
+    //  background-size: 8vh 8vh;
+    opacity: 1.0;
+}
+
+button2:active {
+    //  background-size: 8vh 8vh;
+    opacity: 0.2;
+}
+
+button3 {
+    position: absolute;
+    top: 90vh;
+    left: 75vw;
+    width: 8vh;
+    height: 8vh;
+    border-radius: 0vh;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: url(images/button.png);
+    background-size: 8vh 8vh;
+    opacity: 0.8;
+    z-index: 1000;
+    -webkit-app-region: no-drag;
+}
+
+button3:hover {
+    background-size: 8vh 8vh;
+    opacity: 1.0;
+}
+
+button3:active {
+    background-size: 8vh 8vh;
+    opacity: 0.2;
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
